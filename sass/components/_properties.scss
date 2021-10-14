@@ -1,0 +1,50 @@
+.properties {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.properties__item {
+  width: 270px;
+
+  &:nth-child(1)::before {
+    background-image: url("../images/svgs/antenna.svg");
+  }
+  &:nth-child(2)::before {
+    background-image: url("../images/svgs/clock.svg");
+  }
+  &:nth-child(3)::before {
+    background-image: url("../images/svgs/diagram.svg");
+  }
+  &:nth-child(4)::before {
+    background-image: url("../images/svgs/astronaut.svg");
+  }
+}
+
+.properties__box {
+  display: block;
+  height: 120px;
+  background-color: #f5f4fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.properties__icon {
+  height: 70px;
+  width: 70px;
+}
+
+.properties__title {
+  line-height: 1.36;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+}
+
+.properties__text {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--boulder-color);
+  margin-top: 10px;
+}
